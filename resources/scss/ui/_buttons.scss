@@ -1,0 +1,81 @@
+.btn-default {
+	@include button-variant($white, $gray-300, $gray-800, $gray-100, $gray-300, $gray-800);
+}
+.btn-outline-default {
+	@include button-outline-variant($gray-300, $gray-900);
+	color: $gray-900;
+}
+.btn {
+	&.btn-rounded {
+		@include border-radius(200px !important);
+	}
+
+    &.btn-circle, &.btn-icon{
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        padding: 0;
+        border-radius: 5rem;
+        transition: all ease-in-out 0.3s;
+
+        &.btn-sm{
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            font-size: 1rem;
+        }
+
+
+        span.text{
+            display: none;
+        }
+
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &.btn-icon{
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    &.btn-phone{
+        position: fixed;
+        top: auto;
+        left: auto;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+
+}
+
+
+
+.bootbox-close-button {
+    position: absolute;
+    top: 0.25rem;
+    left: auto;
+    right: 0.25rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    transition: all ease-in-out 0.3s;
+
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}

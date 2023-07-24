@@ -1,0 +1,24 @@
+//input {
+//    &[type=text], &[type=number] {
+//      text-transform: uppercase;
+//    }
+//  }
+//
+//  textarea {
+//    text-transform: uppercase;
+//  }
+
+  .table {
+    td {
+      * {
+        margin: 1px;
+      }
+
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      text-align: center;
+    }
+  }

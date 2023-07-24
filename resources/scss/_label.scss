@@ -1,0 +1,11 @@
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+button.active span {
+    background-color: white!important;
+    color: #777777;
+}

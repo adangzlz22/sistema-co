@@ -1,0 +1,53 @@
+.auth-wrapp {
+    position: relative;
+    overflow: hidden;
+
+    .auth-logo{
+        height: 6rem;
+        width: auto;
+    }
+
+    .auth-mask, .auth-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .auth-mask{
+        z-index: 1;
+    }
+
+
+
+    .auth-bg {
+        z-index: 0;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        transition: background-image 300ms ease-in 200ms;
+    }
+
+
+    .auth-bg-scroll {
+        background-attachment: scroll;
+    }
+
+
+
+    .auth-content {
+        position: relative;
+        z-index: 2;
+    }
+
+
+
+    .auth-footer{
+        padding: 1rem 0;
+    }
+
+}

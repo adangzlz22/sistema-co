@@ -1,0 +1,246 @@
+#map{
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(16, 26, 42, 1);
+
+    #map_canvas{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+
+        .card-img-overlay{
+            top:auto;
+            font-size: 0.85rem;
+            background: linear-gradient(0deg, rgba(16, 26, 42, 1) 5%, rgba(16, 26, 42, 0.85) 65%, rgba(16, 26, 42, 0.85) 100%)
+        }
+    }
+
+    #map_loader{
+        position: absolute;
+        z-index: -1;
+
+        &.d-block{
+            z-index: 10;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: opacify($dark,0.9);
+            .loader{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+
+    }
+
+
+
+
+    #map_help_block{
+        position: absolute;
+        bottom: 2rem;
+        right: calc(-680px + 5rem);
+        z-index: 3;
+        width: 680px;
+        transition: all ease-in-out 0.3s;
+
+
+        @include media-breakpoint-down(sm) {
+            width: 90%;
+            right: calc(-90% + 5rem);
+
+            .card-img-overlay {
+                 position: relative;
+                top: 0;
+                 right: 0;
+                 bottom: 0;
+                 left: 0;
+                 padding: 1rem;
+            }
+
+        }
+    }
+
+
+
+}
+
+.gm-style .gm-style-iw-c {
+    border-radius: 0.25rem !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 7px 1px rgba(0,0,0,0.5);
+    border:0;
+    background: #f7f7f8 !important;
+}
+
+.gm-style-iw-d{
+    overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+
+    background: rgba(16, 26, 42, 1);
+    box-shadow: none !important;
+    /*box-shadow: -2px 2px 2px 0 rgba(178,178,178,.4);
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 15px;*/
+}
+
+button.gm-ui-hover-effect{
+    background: $primary !important;
+    width: 2rem !important;
+    top:0 !important;
+    right: 0!important;
+    height: 2rem !important;
+    opacity: 1 !important;
+
+    img{
+        display: none !important;
+    }
+
+    &::before{
+        content: '\F05AD';
+        font-size: 1.2rem;
+        display: inline-block;
+        font-family: "Material Design Icons";
+        margin: 0.5rem;
+        color: white;
+        transition: all ease-in-out 0.3s;
+
+    }
+
+    &:hover {
+        &::before{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.gm-style .gm-style-iw {
+    font-weight: 400 !important;
+    font-size: 0.9rem !important;
+}
+
+
+.lightbox .lb-image {
+    border-radius: 0 !important;
+    border: 0 !important;
+    box-shadow: $box-shadow;
+}
+
+.lb-nav a.lb-next {
+    background: transparent !important;
+
+    &::before{
+        content: "\f0142";
+        font-size: 5rem;
+        display: inline-block;
+        font-family: "Material Design Icons";
+        margin: 0;
+        color: white;
+        transition: all ease-in-out 0.3s;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 50%;
+        right: 3rem;
+        transform: translate(0, -50%);
+    }
+
+    &:hover {
+        &::before{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.lb-nav a.lb-prev {
+    background: transparent !important;
+
+    &::before{
+        content: "\f0141";
+        font-size: 5rem;
+        display: inline-block;
+        font-family: "Material Design Icons";
+        margin: 0;
+        color: white;
+        transition: all ease-in-out 0.3s;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+        transform: translate(0, -50%);
+    }
+
+    &:hover {
+        &::before{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+.lb-data .lb-close {
+    width: 2rem !important;
+    height: 2rem !important;
+    background: transparent !important;
+    opacity: 1 !important;
+    margin-top: 1rem;
+
+    &::before{
+        content: '\F05AD';
+        font-size: 2rem;
+        display: inline-block;
+        font-family: "Material Design Icons";
+        margin: 0;
+        color: white;
+        transition: all ease-in-out 0.3s;
+
+    }
+
+    &:hover {
+        &::before{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+.marker-info{
+
+    width: 480px;
+    min-height: 270px;
+
+    @include media-breakpoint-down(sm) {
+        width: 234px;
+        min-height: 340px;
+
+         .card-img, .card-img-top, .card-img-bottom{
+             width: 605px;
+             position: relative;
+             top: 0;
+             left: 50%;
+             transform: translate(-50%,0);
+             height: 340px;
+         }
+
+
+    }
+
+
+
+}

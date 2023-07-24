@@ -1,0 +1,135 @@
+.form-control{
+    background-color: white !important;
+    border: 1px solid $gray-400 !important;
+
+    &:disabled{
+        background-color: $gray-200 !important;
+    }
+    &[readonly] {
+        background-color: $gray-100 !important;
+    }
+}
+
+
+
+
+.form-label{
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.select2 {
+    width:100%!important;
+}
+
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .25em .45em !important;
+    margin-right: .375rem;
+    margin-bottom: .375rem;
+    font-size: 0.85rem !important;
+    color: $gray-800 !important;
+    cursor: auto;
+    border: 1px solid $gray-400 !important;
+    border-radius: .25rem !important;
+}
+
+
+.select2-container--bootstrap-5 .select2-selection {
+    width: 100%;
+    min-height: calc(1.30rem + .75rem + 2px) !important;
+    padding: .25em .45em !important;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $dark !important;
+    background-color: #fff;
+    border: 1px solid $gray-400 !important;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__clearAASASDAS,
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__clear {
+    top: 1rem !important;
+    background: none !important;
+    padding: 0 !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    text-indent: 0 !important;
+    &::before{
+        font-family: 'Material Design Icons' !important;
+        content: '\F0156' !important;
+        color: $danger !important;
+        font-size: 1rem !important;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__option--selected, .select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option[aria-selected="true"] {
+    color: #fff;
+    background-color: $primary;
+}
+
+
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    padding: 0.15rem 0;
+    color: $dark !important;
+}
+
+.select2-container--bootstrap-5 .select2-selection {
+    min-height: calc(1.3rem + 0.75rem + 2px) !important;
+    color: $dark !important;
+    border: 1px solid $gray-400 !important;
+}
+
+
+
+.datepicker .datepicker-days table tbody tr td.today{
+    color: $gray-900 !important;
+    background: $gray-100 !important;
+    border: 1px solid $gray-300 !important;
+}
+
+.datepicker .datepicker-days table tbody tr td.disabled {
+    border: 1px solid $gray-300 !important;
+    color: $gray-300 !important;
+    background: $gray-100 !important;
+}
+
+
+.card{
+    &.position-relative{
+        position: relative !important;
+        .card-buttons {
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: 999;
+            opacity: 0;
+            transition: all ease-in-out 0.3s;
+        }
+        &:hover{
+            .card-buttons{
+                display: block;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+.datepicker.datepicker-dropdown {
+    z-index: 1065 !important;
+}

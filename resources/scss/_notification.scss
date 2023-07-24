@@ -1,0 +1,48 @@
+.empty-title-notification {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    padding: 10px;
+    border-top:1px solid #e6e6e6;
+    img {
+        width: 10em;
+    }
+    strong {
+        color: #0b1e2c;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    element.style {
+    }
+
+}
+
+.loading-content {
+    /* text-align: center; */
+    /* display: table-caption; */
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    display: inline-grid;
+    justify-content: center;
+    padding: 10px;
+}
+.dropdown-menu.dropdown-notification .dropdown-notification-item .dropdown-notification-icon {
+    width: 35px;
+}
+//.dropdown-menu.dropdown-notification {
+//    max-height: 450px;
+//    overflow: scroll;
+//}
+
+.notification_content{
+    max-height: 450px;
+    overflow: scroll;
+}
+.notification-up-to-date{
+    text-align: center;
+    padding: 10px;
+}

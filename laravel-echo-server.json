@@ -1,0 +1,32 @@
+{
+	"authHost": "https://sicse.sonora.gob.mx/",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6001",
+	"protocol": "http",
+	"socketio": {},
+	"secureOptions": 67108864,
+    "sslCertPath": "./database/cert/sonora-ssl-apache/9bde25a0d3a1f12.crt",
+    "sslKeyPath": "./database/cert/sonora-ssl-apache/sonora.gob.mx.key",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"subscribers": {
+		"http": false,
+		"redis": true
+	},
+    "apiOriginAllow": {
+        "allowCors": true,
+        "allowOrigin": "*",
+        "allowMethods": "GET, POST",
+        "allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requeste>"
+    }
+}

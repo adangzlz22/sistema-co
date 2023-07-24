@@ -1,0 +1,108 @@
+
+.tab {
+
+
+    .btn{
+        text-align: left !important;
+        display: block;
+        padding: 1.1rem 2.5rem 1.1rem 2.5rem;
+        position: relative;
+        font-size: 0.85rem;
+        line-height: 1;
+        transition: $transition;
+
+
+        &.valid{
+
+            &::before{
+                content: '\F05E1';
+                font-family: "Material Design Icons";
+                position: absolute;
+                top: 50%;
+                right: 0.5rem;
+                font-size: 1rem;
+                transform: translate(0,-50%);
+                color: $success;
+                transition: $transition;
+            }
+
+        }
+
+
+       &:hover, &.active{
+
+           &.valid{
+               &::before {
+                   color: white;
+               }
+           }
+       }
+
+
+        .mdi{
+            position: absolute;
+            top: 50%;
+            left: 0.5rem;
+            transform: translate(0,-50%);
+            font-size: 1.5rem;
+            transition: $transition;
+        }
+
+        &:hover{
+
+            padding-left: 2.6rem;
+
+            .mdi{
+                transform: scale(1.1)  translate(0,-50%);
+            }
+        }
+
+
+        &.active{
+            background-color: $success;
+            border-color: $success;
+        }
+
+
+    }
+}
+
+/* Style the buttons inside the tab */
+/*
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+/*
+.tab button:hover {
+    background-color: #ddd;
+}
+
+*/
+
+/* Create an active/current "tab button" class */
+/*.tab button.active {
+    background-color: #ccc;
+}
+*/
+/* Style the tab content */
+.tabcontent {
+    height: 100%;
+}
+.tablinks.disabled {
+    cursor: no-drop;
+}
+.error{
+    color: #ff0000;
+}
